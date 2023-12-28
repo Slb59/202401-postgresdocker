@@ -33,4 +33,23 @@ Modifier l'url principale dans config
 
 ```
 python manage.py migrate
+python manage.py makemigrations
+python manage.py runserver
+```
+
+5. Configurer postgres
+
+Modifier les settings et .env
+
+```
+pipenv install psycopg2
+pipenv requirements > requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+```
+
+6. Configurer docker et docker-compose
+
+```
+docker compose up --build
 ```
