@@ -24,5 +24,13 @@ python manage.py startapp tasks
 pipenv install djangorestframework
 ```
 
-Ajouter l’application Tâches à INSTALLED_APPS
-Modifier le model
+Ajouter l’application tasks et rest_framework à INSTALLED_APPS
+Modifier le model et le serializer
+Modifier la vue et l'url de l'application tasks
+Modifier l'url principale dans config
+
+4. Lancer les migrations et le serveur
+
+```
+python manage.py migrate
+```
